@@ -15,11 +15,11 @@
   text-transform: uppercase;
 }
 
-.logo-web {
+.logo-textweb {
   color: #4d5ae5;
 }
 
-.logo-studio {
+.logo-textstudio {
   color: #2e2f42;
 }
 .menu-link {
@@ -41,6 +41,34 @@
   text-transform: lowercase;
 }
 
-.logo-studio-footer {
-  /* color: #f4f4fd; */
+.main-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  /* color: #ffffff; */
 }
+
+.modal-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* .contact:hover, */
+/* .contact:focus { */
+/* color: #4d5ae5; */
+/* } */
+
+/* .logo-studio-footer { */
+/* color: #f4f4fd; */
+/* } */
