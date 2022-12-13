@@ -1,3 +1,12 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --primary-text-color-theme-ligt: #2e2f42;
+  --secondary-text-color-theme-light: #434455;
+  --primary-text-color-theme-blak: #ffffff;
+  --secondary-text-color-theme-blak: #e7e9fc;
+}
+
 .list {
   list-style: none;
 }
@@ -6,8 +15,12 @@
   text-decoration: none;
 }
 
+body {
+  font-family: var(--primary-font);
+}
+
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
@@ -19,56 +32,96 @@
   color: #4d5ae5;
 }
 
-.logo-textstudio {
-  color: #2e2f42;
-}
-.menu-link {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.logo-textblak-studio {
+  color: var(--primary-text-color-theme-ligt);
 }
 
-.contact {
-  font-family: 'Roboto', sans-serif;
+/* .logo-textlight-studio {
+color: #f4f4fd;
+} */
+
+.section-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
-  text-transform: lowercase;
+  color: var(--secondary-text-color-theme-light);
 }
 
+.thirdly-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-ligt);
+}
+
+.second-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color-theme-ligt);
+}
+
+/* ====================== /COMPONENTS ===================== */
+
+/* ======================== HEADER ======================== */
+
+.menu-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-ligt);
+}
+
+/* ======================== /HEADER ========================  */
+
+/* ======================== HERO ========================  */
+
 .main-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  /* color: #ffffff; */
+  /* color: var(--primary-text-color-theme-blak); */
 }
 
 .modal-btn {
-  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.19;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--primary-text-color-theme-blak);
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-/* .contact:hover, */
-/* .contact:focus { */
-/* color: #4d5ae5; */
-/* } */
 
-/* .logo-studio-footer { */
-/* color: #f4f4fd; */
-/* } */
+/* ======================== /HERO ======================== */
+
+/* ======================== ABOUT ======================== */
+
+/* ======================== /ABOUT ========================  */
+
+/* ======================== OFFER ========================  */
+
+/* ======================== /OFFER ======================== */
+
+/* ======================== EMPLOYEES ======================== */
+
+/* ======================== /EMPLOYEES ======================== */
+
+/* ======================== FOOTER ======================== */
+
+.footer-description {
+  color: var(--secondary-text-color-theme-blak);
+}
+
+/* ======================== /FOOTER ========================  */
