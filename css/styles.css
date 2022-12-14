@@ -2,8 +2,8 @@
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --primary-text-color-theme-ligt: #2e2f42;
-  --secondary-text-color-theme-light: #434455;
   --primary-text-color-theme-blak: #ffffff;
+  --secondary-text-color-theme-light: #434455;
   --secondary-text-color-theme-blak: #e7e9fc;
 }
 
@@ -21,7 +21,7 @@ body {
 
 .logo {
   font-family: var(--secondary-font);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -128,7 +128,6 @@ color: #f4f4fd;
 
 /* ======================= PORTFOLIO ========================= */
 .portfolio-btn {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -145,7 +144,7 @@ color: #f4f4fd;
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
+  color: var(--primary-text-color-theme-blak);
   background: #4d5ae5;
 }
 /*======================= /PORTFOLIO =========================   */
