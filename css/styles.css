@@ -49,7 +49,7 @@ color: #f4f4fd;
 }
 
 .thirdly-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -57,7 +57,7 @@ color: #f4f4fd;
 }
 
 .second-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -71,7 +71,7 @@ color: #f4f4fd;
 /* ======================== HEADER ======================== */
 
 .menu-link {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -83,7 +83,7 @@ color: #f4f4fd;
 /* ======================== HERO ========================  */
 
 .main-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -92,7 +92,7 @@ color: #f4f4fd;
 }
 
 .modal-btn {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   display: flex;
@@ -125,3 +125,27 @@ color: #f4f4fd;
 }
 
 /* ======================== /FOOTER ========================  */
+
+/* ======================= PORTFOLIO ========================= */
+.portfolio-btn {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background: #4d5ae5;
+}
+/*======================= /PORTFOLIO =========================   */
