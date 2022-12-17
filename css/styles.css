@@ -1,10 +1,15 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
-  --primary-text-color-theme-ligt: #2e2f42;
-  --primary-text-color-theme-blak: #ffffff;
-  --secondary-text-color-theme-light: #434455;
-  --secondary-text-color-theme-blak: #e7e9fc;
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --navigation-active: #404bbf;
+  --white-text-color: #ffffff;
 }
 
 .list {
@@ -17,53 +22,65 @@
 
 body {
   font-family: var(--primary-font);
+  color: var(--text);
+  background-color: var(--white-text-color);
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 
 .logo {
   font-family: var(--secondary-font);
   font-weight: 800;
+  color: var(--primary-brand);
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.logo-textweb {
-  color: #4d5ae5;
+.logo-textdark {
+  color: var(--dark);
 }
 
-.logo-textblak-studio {
-  color: var(--primary-text-color-theme-ligt);
+.logo-textlight {
+  color: var(--light);
 }
-
-/* .logo-textlight-studio {
-color: #f4f4fd;
-} */
 
 .section-description {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color-theme-light);
+  color: var(--text);
 }
 
 .thirdly-title {
+  /* в макеті стоїть 500. Чи міняти на 700? */
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-ligt);
+  color: var(--dark);
 }
 
 .second-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--primary-text-color-theme-ligt);
+  color: var(--dark);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* ====================== /COMPONENTS ===================== */
@@ -71,37 +88,49 @@ color: #f4f4fd;
 /* ======================== HEADER ======================== */
 
 .menu-link {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-ligt);
+  color: var(--dark);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
 }
 
 /* ======================== /HEADER ========================  */
 
 /* ======================== HERO ========================  */
 
+.hero {
+  background-color: #2e2f42;
+}
+
 .main-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02em;
-  /* color: var(--primary-text-color-theme-blak); */
+  color: var(--white-text-color);
 }
 
 .modal-btn {
-  font-weight: 500;
-  font-size: 16px;
+  font-family: inherit;
+  font-weight: 700;
   line-height: 1.19;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: var(--primary-text-color-theme-blak);
-  background: #4d5ae5;
+  color: var(--white-text-color);
+  background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* ======================== /HERO ======================== */
@@ -116,35 +145,47 @@ color: #f4f4fd;
 
 /* ======================== EMPLOYEES ======================== */
 
+.ourteam {
+  background-color: #f4f4fd;
+}
+
 /* ======================== /EMPLOYEES ======================== */
 
 /* ======================== FOOTER ======================== */
 
+.footer {
+  background-color: #2e2f42;
+}
+
 .footer-description {
-  color: var(--secondary-text-color-theme-blak);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--accent);
 }
 
 /* ======================== /FOOTER ========================  */
 
 /* ======================= PORTFOLIO ========================= */
+
 .portfolio-btn {
-  font-weight: 500;
-  font-size: 16px;
+  /* Чи треба вказувати ще раз font-family якщо ми маємо його в body? */
+  font-family: var(--white-text-color);
+  font-weight: 700;
   line-height: 1.5;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  color: var(--primary-brand);
+  background: var(--light);
+  border: 1px solid var(--accent);
   border-radius: 4px;
   cursor: pointer;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: var(--primary-text-color-theme-blak);
-  background: #4d5ae5;
+  color: var(--white-text-color);
+  background: var(--primary-brand);
 }
 /*======================= /PORTFOLIO =========================   */

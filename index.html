@@ -21,11 +21,10 @@
     <header class="page-header">
       <!--Навігація на інші сторінки-->
       <nav class="page-nav">
-        <!--Логотип фото-->
+        <!--Логотип текстовий-->
         <a class="logo link" href="index.html"
-          ><span class="logo-textweb">WEB</span
-          ><span class="logo-textblak-studio">STUDIO</span></a
-        >
+          >WEB<span class="logo-textdark">STUDIO</span>
+        </a>
         <ul class="list menu">
           <li class="menu-item">
             <a class="link menu-link" href="index.html">Studio</a>
@@ -38,20 +37,26 @@
           </li>
         </ul>
       </nav>
+
       <!--Contacts-->
       <ul class="list contacts">
         <li class="contact-item">
-          <a class="link section-description" href="mailto:info@devstudio.com"
+          <a
+            class="link section-description contact-link"
+            href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li class="contact-item">
-          <a class="link section-description" href="tel:+11(000)111-11-11"
+          <a
+            class="link section-description contact-link"
+            href="tel:+11(000)111-11-11"
             >+11(000)111-11-11</a
           >
         </li>
       </ul>
     </header>
+
     <!--Sections-->
     <main>
       <!--HERO-->
@@ -62,8 +67,9 @@
 
       <!--About us-->
       <section>
-        <h2 hidden>About us</h2>
         <!--прихований на сторінці, найкраще щоб в клжній секції був заголовок-->
+        <h2 class="visually-hidden">About us</h2>
+
         <ul class="list about">
           <li class="about-item">
             <h3 class="thirdly-title">Strategy</h3>
@@ -128,7 +134,7 @@
       </section>
 
       <!--Employees-->
-      <section>
+      <section class="ourteam">
         <h2 class="second-title">Our Team</h2>
         <ul class="list employees">
           <li class="employees-item">
@@ -176,12 +182,11 @@
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="footer">
       <a class="logo link" href="index.html"
-        ><span class="logo-textweb">WEB</span
-        ><span class="logo-textlight-studio">STUDIO</span></a
+        >WEB<span class="logo-textlight">STUDIO</span></a
       >
-      <p class="footer-description section-description">
+      <p class="footer-description">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
