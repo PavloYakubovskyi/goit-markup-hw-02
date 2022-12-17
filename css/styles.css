@@ -133,6 +133,11 @@ body {
   cursor: pointer;
 }
 
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+}
+
 /* ======================== /HERO ======================== */
 
 /* ======================== ABOUT ======================== */
